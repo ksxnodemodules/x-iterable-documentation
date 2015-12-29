@@ -61,7 +61,7 @@ Examples:
 
 ```javascript
 var Iterable = require('x-iterable/create-class').fromGenerator(mygen);
-var iterable = new Iterable([0, 1, 2, 3], -3, -2, -1, 0, 1, 2, 3);
+var iterable = new Iterable([-3, -2, -1, 0, 1, 2, 3], -3, -2, -1, 0, 1, 2, 3);
 iterable.forEach((element) => console.log(element));
 function * mygen(array, ...timeses) {
 	yield * timeses.map((times) => array.map((element) => times * element));
