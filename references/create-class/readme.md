@@ -3,11 +3,11 @@
 
 ## Require
 
+There're two ways to require create-class
+
 ```javascript
 var createClass = require('x-iterable/create-class');
 ```
-
-*or*
 
 ```javascript
 var createClass = require('x-iterable').createClass;
@@ -25,6 +25,8 @@ IterableClass createClass(optional Class base = createClass.default);
   - `base` (optional): an [iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) class
  * Return value:
   - An [`IterableClass`](./iterable-class.md)
+ * Source code:
+  - https://github.com/ksxnodemodules/x-iterable/blob/master/create-class.js#L12
 
 Example:
 
@@ -56,6 +58,8 @@ GeneratorClass createClass.fromGenerator(JSGenerator<any, GeneratorClassInstance
   - `generator`: A JavaScript [generator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) function which chooses elements for return value by `yield`ing that elements
  * Return value:
   - A [`GeneratorClass`](./generator-class.md)
+ * Source code:
+  - https://github.com/ksxnodemodules/x-iterable/blob/master/create-class.js#L80
 
 Examples:
 
