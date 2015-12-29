@@ -5,7 +5,7 @@
 ## What's this repo using for?
 This repo is contains documents for x-iterable - a [node](https://nodejs.org) [package](https://npmjs.com), including:
  - User Manual
- - API References
+ - [API References](./references/readme.md)
 
 ## About x-iterable
  * Git repo: [<img src="./images/github-mark-64px.png" height="18">/ksxnodemodules/x-iterable](https://github.com/ksxnodemodules/x-iterable.git)
