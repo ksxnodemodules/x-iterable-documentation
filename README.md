@@ -9,4 +9,4 @@ This repo is contains documents for x-iterable - a [node](https://nodejs.org) [p
 
 ## About x-iterable
  * Git repo: [<img src="./images/github-mark-64px.png" height="18">/ksxnodemodules/x-iterable](https://github.com/ksxnodemodules/x-iterable.git)
- * NPM package: [<img src="./images/npm-logo.svg" height="18">/x-iterable](https://npmjs.com/packages/x-iterable)
+ * NPM package: [<img src="./images/npm-logo.png" height="18">/x-iterable](https://npmjs.com/packages/x-iterable)
