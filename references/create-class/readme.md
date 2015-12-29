@@ -18,13 +18,13 @@ var createClass = require('x-iterable').createClass;
 ### Function `createClass`
 
 ```
-IterableClass createClass(optional Class base = createClass.default);
+XIterable createClass(optional Class base = createClass.default);
 ```
 
  * Parameters:
   - `base` (optional): an [iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) class
  * Return value:
-  - An [`IterableClass`](./iterable-class.md)
+  - An [`XIterable<base>`](./x-iterable.md)
  * Source code:
   - https://github.com/ksxnodemodules/x-iterable/blob/master/create-class.js#L12
 
