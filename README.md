@@ -2,6 +2,8 @@
 # Documentation of x-iterable package
  * This document is for x-iterable v1.2.3
 
+**NOTE: This document is not yet completed**
+
 ## What's this repo using for?
 This repo is contains documents for x-iterable - a [node](https://nodejs.org) [package](https://npmjs.com), including:
  - User Manual
