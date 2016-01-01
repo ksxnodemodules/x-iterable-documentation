@@ -3,8 +3,6 @@
 
 ## Require
 
-There're two ways to require create-class
-
 ```javascript
 var createClass = require('x-iterable/create-class');
 ```
