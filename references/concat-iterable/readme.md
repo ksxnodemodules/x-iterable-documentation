@@ -18,7 +18,7 @@ class ConcatIterable = XIterable<ConcatIterableBase>;
 ```
 
 See also:
- - [ConcatIterableBase](./concat-iterable-base.md)
+ - [`ConcatIterableBase`](./concat-iterable-base.md)
 
 Examples:
 
