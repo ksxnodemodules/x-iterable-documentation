@@ -26,7 +26,7 @@ XIterable createClass(optional Class base = createClass.default);
  * Source code:
   - https://github.com/ksxnodemodules/x-iterable/blob/master/create-class.js#L12
 
-Example:
+Examples:
 
 ```javascript
 var createClass = require('x-iterable/create-class');
