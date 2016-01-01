@@ -1,7 +1,7 @@
 
 # create-class
 
-## Template Class: XIterable
+## Template Class: `XIterable`
 
 ```
 template <class Super>
