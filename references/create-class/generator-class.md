@@ -10,5 +10,5 @@ class GeneratorClassBase {
 	public ReturnValue<gen> [Symbol.iterator]();
 }
 template <class gen>
-alias GeneratorClass = SubClass<XIterable<GeneratorClassBase<gen>>>;
+class GeneratorClass = XIterable<GeneratorClassBase<gen>>;
 ```
