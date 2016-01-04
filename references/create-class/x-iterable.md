@@ -22,7 +22,7 @@ Work in the same way of `JSArray::`, but `callback` takes only 2 parameters inst
  - The first represents each element of the iterable object
  - The second represents the iterable object itself
 
-Examples:
+#### Examples:
 
 ```javascript
 var createClass = require('x-iterable/create-class');
@@ -30,13 +30,13 @@ var Iterable = createClass(Array); // Iterable is now XIterable above
 var iterable = new Iterable(12, -4, 45, 6, -9); // To be continued...
 ```
 
-#### Using `::forEach` to `console.log` all `iterable`'s elements
+##### Using `::forEach` to `console.log` all `iterable`'s elements
 
 ```javascript
 iterable.forEach((element) => console.log(element));
 ```
 
-#### Using `::map` to transform each element of `iterable` as `e` to `[e, -e, 2e]`
+##### Using `::map` to transform each element of `iterable` as `e` to `[e, -e, 2e]`
 
 ```javascript
 console.log(iterable.map((element) => [element, -element, 2 * element]));
@@ -57,12 +57,25 @@ Function `callback` takes 3 arguments:
 
 If `callback(element, old, self)` returns `true`, `element` will be assigned to `old` for the next element
 
-#### Using `::most` to find longest string
+#### Examples
 
 ```javascript
 var createClass = require('x-iterable/create-class');
 var Iterable = createClass(Array);
+```
+
+##### Using `::most` to find longest string
+
+```javascript
 var iterable = new Iterable('abcdef', 'Hello, World!!', '12', 'alphabet');
 var longest = iterable.most((element, longest) => element.length > longest.length, '');
 console.log(`The longest string is: "${longest}"`);
+```
+
+##### Using `::most` to find shortest array/string
+
+```javascript
+var iterable = new Iterable('abcdefghijklmnopqrstuvwxyz', [0, 1, 2, 3], Array.from('Hello, World!!'));
+var shortest = iterable.most((element, shortest) => element.length < shortest.length, {length: Infinity});
+console.log({result: shortest});
 ```
