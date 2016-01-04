@@ -3,10 +3,13 @@
 
 **NOTE: This document is not yet completed**
 
- - [create-class](./create-class/readme.md)
+ * [create-class](./create-class)
+  - [createClass](./create-class/readme.md)
+  - [XIterable](./x-iterable.md)
+  - [GeneratorClass](./create-class/generator-class.md)
 
- - [concat-iterable](./concat-iterable/readme.md)
+ * [concat-iterable](./concat-iterable)
 
- - [deep-iterable](./deep-iterable/readme.md)
+ * [deep-iterable](./deep-iterable)
 
- - [parallel-iterable](./parallel-iterable/readme.md)
+ * [parallel-iterable](./parallel-iterable)
