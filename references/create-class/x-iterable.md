@@ -11,7 +11,7 @@ class XIterable : Super {
 	public bool some(JSFunction<bool stop, void, any element, XIterable<Super> self> callback);
 	public bool every(JSFunction<bool next, void, any element, XIterable<Super> self> callback);
 	public filter(JSFunction<bool keep, void, any element, XIterable<Super> self> callback);
-	public any most(JSFunction<bool closer, void, any element, XIterable<Super> self> callback);
+	public any most(JSFunction<bool closer, void, any element, any old, XIterable<Super> self> callback, any init);
 	public get JSNumber min, max;
 }
 ```
@@ -30,14 +30,39 @@ var Iterable = createClass(Array); // Iterable is now XIterable above
 var iterable = new Iterable(12, -4, 45, 6, -9); // To be continued...
 ```
 
-1. Using `::forEach` to `console.log` all `iterable`'s elements
+#### Using `::forEach` to `console.log` all `iterable`'s elements
 
 ```javascript
 iterable.forEach((element) => console.log(element));
 ```
 
-2. Using `::map` to transform each element of `iterable` as `e` to `[e, -e, 2e]`
+#### Using `::map` to transform each element of `iterable` as `e` to `[e, -e, 2e]`
 
 ```javascript
 console.log(iterable.map((element) => [element, -element, 2 * element]));
+```
+
+### Method: `::most`
+
+Find extremum of an iterable e.g. minimum, maximum
+
+This method takes 2 arguments:
+ - `callback` is a function
+ - `init` is a value of any kind which should not be the extremum
+
+Function `callback` takes 3 arguments:
+ - `element`: current element
+ - `old`: old extremum
+ - `self`: the iterable object
+
+If `callback(element, old, self)` returns `true`, `element` will be assigned to `old` for the next element
+
+#### Using `::most` to find longest string
+
+```javascript
+var createClass = require('x-iterable/create-class');
+var Iterable = createClass(Array);
+var iterable = new Iterable('abcdef', 'Hello, World!!', '12', 'alphabet');
+var longest = iterable.most((element, longest) => element.length > longest.length, '');
+console.log(`The longest string is: "${longest}"`);
 ```
