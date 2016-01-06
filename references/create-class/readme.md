@@ -69,3 +69,7 @@ function * mygen(array, ...timeses) {
 	yield * timeses.map((times) => array.map((element) => times * element));
 }
 ```
+
+### Class `createClass.Yield`
+
+ * See: [Class `createClass.Yield`](./create-class-yield.md)
