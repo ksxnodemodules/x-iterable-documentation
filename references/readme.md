@@ -14,3 +14,6 @@
 ## [deep-iterable](./deep-iterable)
 
 ## [parallel-iterable](./parallel-iterable)
+
+## [Global references](./global)
+ - [References](./global/readme.md)
