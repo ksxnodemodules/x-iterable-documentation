@@ -15,7 +15,7 @@ class createClass.Yield = XIterable<YieldBase>;
 
 ### Features
 
-Create an [`XIterate`](./x-iterable.md) which iterate a [`Yieldable`](../base/readme.md#yieldable) object
+Create an [`XIterate`](./x-iterable.md) which iterate a [`Yieldable`](../global/readme.md#yieldable) object
 
 ### Examples
 
