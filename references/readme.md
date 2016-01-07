@@ -19,5 +19,7 @@
 
 ## [parallel-iterable](./parallel-iterable)
 
+## [product-iterable](./product-iterable)
+
 ## [Global references](./global)
  - [References](./global/readme.md)
