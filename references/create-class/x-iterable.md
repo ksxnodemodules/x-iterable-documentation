@@ -16,9 +16,9 @@ class XIterable : Super {
 }
 ```
 
-### Methods: `::forEach`, `::map`, `::some`, `::every`, `::filter`
+### Methods: `::forEach`, `::map`, `::some`, `::every`, `::filter`, `::reduce`
 
-Work in the same way of `JSArray::`, but `callback` takes only 2 parameters instead of 3:
+Work in the same way of `JSArray::`, but `callback` takes less than `JSArray::` 1 parameter (no parameters for `index`):
  - The first represents each element of the iterable object
  - The second represents the iterable object itself
 
@@ -26,8 +26,8 @@ Work in the same way of `JSArray::`, but `callback` takes only 2 parameters inst
 
 ```javascript
 var createClass = require('x-iterable/create-class');
-var Iterable = createClass(Array); // Iterable is now XIterable above
-var iterable = new Iterable(12, -4, 45, 6, -9); // To be continued...
+var Iterable = createClass(Int32Array); // Iterable is now XIterable above
+var iterable = new Iterable([12, -4, 45, 6, -9]); // To be continued...
 ```
 
 ##### Using `::forEach` to `console.log` all `iterable`'s elements
@@ -40,6 +40,12 @@ iterable.forEach((element) => console.log(element));
 
 ```javascript
 console.log(iterable.map((element) => [element, -element, 2 * element]));
+```
+
+#### Using `::reduce` to calculate summation of a sequence
+
+```javascript
+console.log(iterable.reduce((prev, now) => prev + now, 0));
 ```
 
 ### Method: `::most`
