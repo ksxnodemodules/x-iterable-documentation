@@ -48,6 +48,8 @@ Returns `true` if `target` is both an object and an iterable
 
 Returns `true` if `target` is an iterable value which is passed to this function for the first time
 
+It's good to use to iterate *circular* object/value (e.g. strings, circular arrays ...)
+
 ### Enum function `DeepIterableBase.DEFAULT_DEEPER`
 
 ```
