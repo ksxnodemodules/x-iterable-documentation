@@ -1,7 +1,7 @@
 
 # Global specs
 
-## Struct: `Iterable`
+## Struct: `JSIterable`
 
  * See also:
   - [iterable object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#Iterables)
@@ -13,7 +13,7 @@ An iterable class is a class which is used to create iterable objects
 
 ```
 template <class Target>
-struct Iterable {
+struct JSIterable {
 	public JSIterator<Target> [Symbol.iterator]();
 }
 ```
