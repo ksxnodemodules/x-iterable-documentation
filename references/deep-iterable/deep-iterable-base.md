@@ -50,6 +50,15 @@ Returns `true` if `target` is an iterable value which is passed to this function
 
 It's good to use to iterate *circular* object/value (e.g. strings, circular arrays ...)
 
+### Enum function `DeepIterableBase.LENGTHINESS_DEEPER`
+
+ * Type: `bool (DeepIterableTarget<any> target, DeepIterable)`
+  - a.k.a. `Deeper`
+
+Returns `true` if `target` has property `length` greater than 1
+
+It means that the iteration process would not go deeper if the iterable has no elements or has only one element
+
 ### Enum function `DeepIterableBase.DEFAULT_DEEPER`
 
 ```
