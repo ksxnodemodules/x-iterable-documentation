@@ -32,21 +32,21 @@ Constructor takes 1 or 2 parameters: an iterable object called `target` and a fu
 
 `deeper` is a function which would take 2 parameters (See 'Type' above).
 
-If `deeper(...)` returns `true`, iteration process would go deeper
+If `element` is an iterable and `deeper(element, ...)` returns `true`, iteration process would go deeper: iterate `element` as a `DeepIterable` using the same `deeper`
 
 ### Enum function `DeepIterableBase.OBJECT_DEEPER`
 
  * Type: `bool (DeepIterableTarget<any> target, DeepIterable)`
   - a.k.a. `Deeper`
 
-Returns `true` if `target` is both an object and an iterable
+Returns `true` if `target` is an object
 
 ### Enum function `DeepIterableBase.CIRCULAR_DEEPER`
 
  * Type: `bool (DeepIterableTarget<any> target, DeepIterable)`
   - a.k.a. `Deeper`
 
-Returns `true` if `target` is an iterable value which is passed to this function for the first time
+Returns `true` if `target` is a value which is passed to this function for the first time
 
 It's good to use to iterate *circular* object/value (e.g. strings, circular arrays ...)
 
