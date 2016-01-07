@@ -5,7 +5,7 @@
 
 ## [create-class](./create-class)
  - [createClass](./create-class/readme.md)
- - [XIterable](./x-iterable.md)
+ - [XIterable](./create-class/x-iterable.md)
  - [GeneratorClass](./create-class/generator-class.md)
  - [createClass.Yield](./create-class/create-class-yield.md)
 
