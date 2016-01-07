@@ -42,7 +42,7 @@ iterable.forEach((element) => console.log(element));
 console.log(iterable.map((element) => [element, -element, 2 * element]));
 ```
 
-#### Using `::reduce` to calculate summation of a sequence
+##### Using `::reduce` to calculate summation of a sequence
 
 ```javascript
 console.log(iterable.reduce((prev, now) => prev + now, 0));
