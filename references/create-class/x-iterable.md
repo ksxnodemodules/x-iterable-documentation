@@ -12,7 +12,8 @@ class XIterable : Super {
 	public bool every(JSFunction<bool next, void, any element, XIterable<Super> self> callback);
 	public filter(JSFunction<bool keep, void, any element, XIterable<Super> self> callback);
 	public any most(JSFunction<bool closer, void, any element, any old, XIterable<Super> self> callback, any init);
-	public get JSNumber min, max;
+	public get JSNumber min, max, sumAsNum, productAsNum;
+	public get JSNumber sumAsStr, sumAsReservedStr;
 }
 ```
 
