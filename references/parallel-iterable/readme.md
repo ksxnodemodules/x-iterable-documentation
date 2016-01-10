@@ -1,5 +1,4 @@
-
-# parallel-iterable
+erable
 
 ## Require
 
@@ -26,16 +25,16 @@ Examples:
 var ParallelIterable = require('x-iterable/parallel-iterable');
 console.log({
 	'follow-the-first':
-		new ParallelIterable(ParallelIterable.END_OF_FIRST, 'abcdef', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', '0123456789', 'xyz')
+		new ParallelIterable(ParallelIterable.END_OF_FIRST, 'abcdef', 'ABCDEFGHIJKL', '0123456789', 'xyz')
 			.toArray(),
 	'follow-the-shortest':
-		new ParallelIterable(ParallelIterable.END_OF_SOME, 'abcdef', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', '0123456789', 'xyz')
+		new ParallelIterable(ParallelIterable.END_OF_SOME, 'abcdef', 'ABCDEFGHIJKL', '0123456789', 'xyz')
 			.toArray(),
 	'follow-the-longest':
-		new ParallelIterable(ParallelIterable.END_OF_ALL, 'abcdef', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', '0123456789', 'xyz')
+		new ParallelIterable(ParallelIterable.END_OF_ALL, 'abcdef', 'ABCDEFGHIJKL', '0123456789', 'xyz')
 			.toArray(),
 	'for-count':
-		new ParallelIterable(ParallelIterable.FOR_COUNT(4), 'abcdef', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', '0123456789', 'xyz')
+		new ParallelIterable(ParallelIterable.FOR_COUNT(4), 'abcdef', 'ABCDEFGHIJKL', '0123456789', 'xyz')
 			.toArray(),
 	'just-want-to-see-why':
 		new ParallelIterable(LOOKING_FOR('y'), 'abcdef', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', '0123456789', 'xyz')
