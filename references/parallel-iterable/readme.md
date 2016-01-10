@@ -37,7 +37,7 @@ console.log({
 		new ParallelIterable(ParallelIterable.FOR_COUNT(4), 'abcdef', 'ABCDEFGHIJKL', '0123456789', 'xyz')
 			.toArray(),
 	'just-want-to-see-why':
-		new ParallelIterable(LOOKING_FOR('y'), 'abcdef', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', '0123456789', 'xyz')
+		new ParallelIterable(LOOKING_FOR('y'), 'abcdef', 'ABCDEFGHIJKL', '0123456789', 'xyz')
 			.toArray()
 });
 function LOOKING_FOR(value) {
