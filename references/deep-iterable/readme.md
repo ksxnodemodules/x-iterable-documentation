@@ -29,6 +29,6 @@ var target = [
 	[0, [1, 2], 3, [4, [5, 6], 7, 8]],
 	new Set(Array.from('abcdefghijklmnopqrstuvwxyz').map(Symbol))
 ];
-var iterable = new DeepIterable(target, DeepIterable.CIRCULAR_DEEPER);
+var iterable = new DeepIterable(target);
 console.log(Array.from(iterable));
 ```
