@@ -40,7 +40,7 @@ template <class Target>
 struct JSIterator {
 	public JSIteratorReturn<Target> next();
 	public JSIteratorReturn<Target> return(Target value);
-	public void throw(Error exception);
+	optional public void throw(Error exception);
 }
 ```
 
