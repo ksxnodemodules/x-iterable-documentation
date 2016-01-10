@@ -34,25 +34,19 @@ Constructor takes 1 or 2 parameters: an iterable object called `target` and a fu
 
 If `element` is an iterable and `deeper(element, ...)` returns `true`, iteration process would go deeper: iterate `element` as a `DeepIterable` using the same `deeper`
 
+### Enum function `DeepIterableBase.ANY_DEEPER`
+
+ * Type: `bool (DeepIterableTarget<any>, DeepIterable)`
+  - a.k.a. `Deeper`
+
+Always returns `true`
+
 ### Enum function `DeepIterableBase.OBJECT_DEEPER`
 
  * Type: `bool (DeepIterableTarget<any> target, DeepIterable)`
   - a.k.a. `Deeper`
 
 Returns `true` if `target` is an object
-
-### Enum function `DeepIterableBase.CIRCULAR_DEEPER`
-
- * Type: `bool (DeepIterableTarget<any> target, DeepIterable)`
-  - a.k.a. `Deeper`
-
-Returns `true` if `target` is a value which is passed to this function for the first time
-
-It's good to use to iterate *circular* object/value (e.g. strings, circular arrays ...)
-
-**NOTE:**
- - `DeepIterableBase.CIRCULAR_DEEPER` is a [property getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get), it means that every `DeepIterableBase.CIRCULAR_DEEPER` are different
- - A particular `DeepIterableBase.CIRCULAR_DEEPER` returns `true` for any particular value for once, see this [example code](https://gist.github.com/KSXGitHub/e2fc5d65ae3b33a1e058)
 
 ### Enum function `DeepIterableBase.LENGTHINESS_DEEPER`
 
