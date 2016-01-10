@@ -18,6 +18,7 @@
  - [`DeepIterableBase`](./deep-iterable/deep-iterable-base.md)
 
 ## [parallel-iterable](./parallel-iterable)
+ - [`ParallelIterable`](./parallel-iterable/readme.md)
 
 ## [product-iterable](./product-iterable)
 
