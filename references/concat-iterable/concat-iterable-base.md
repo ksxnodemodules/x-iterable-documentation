@@ -1,6 +1,9 @@
 
 # concat-iterable
 
+ * See also:
+  - [`JSIterable`](../global/readme.md#struct-jsiterable)
+
 ## Class: `ConcatIterableBase`
 
 ```
