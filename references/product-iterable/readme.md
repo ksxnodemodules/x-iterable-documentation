@@ -29,8 +29,10 @@ var iterable = new ProductIterable(
 	[3, 8, 4, 22, -6, 5],
 	[7, 2, 12, 3, 4, 22]
 );
-console.log(iterable.map(
-	(elements) =>
-		elements.reduce((prev, now) => prev * now, 1)
-));
+console.log(
+	iterable.map(
+		(elements) =>
+			elements.reduce((prev, now) => prev * now, 1)
+	)
+);
 ```
