@@ -19,6 +19,7 @@
 
 ## [parallel-iterable](./parallel-iterable)
  - [`ParallelIterable`](./parallel-iterable/readme.md)
+ - [`ParallelIterableBase`](./parallel-iterable/parallel-iterable-base.md)
 
 ## [product-iterable](./product-iterable)
 
