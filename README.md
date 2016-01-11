@@ -1,6 +1,6 @@
 
 # Documentation of x-iterable package
- * This document is for x-iterable v1.3.8
+ * This document is for x-iterable v1.3.9
 
 **NOTE: This document is not yet completed**
 
