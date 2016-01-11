@@ -61,5 +61,5 @@ Returns a `Stop` which determines how many times does iterating
 ## Typedef `Stop`
 
 ```
-typedef JSFunction<ParallelIterable, bool, JSArray<any>, ParallelIterable> Stop;
+typedef JSFunction<bool, ParallelIterable, JSArray<any>, ParallelIterable> Stop;
 ```
