@@ -11,3 +11,23 @@ class ConcatIterableBase {
 	public static ConcatIterable multiply(JSIterable<any>, unsigned int);
 }
 ```
+
+### Constructor
+
+Constructor takes at least 1 parameters
+
+### Function `ConcatIterable.times` aka `ConcatIterable.multiply`
+
+```
+ConcatIterable multiply(JSIterable<any> iterable, unsigned int times);
+```
+
+Create a ConcatIterable of `times` of `iterable`s
+
+#### Example: Repeat `['a', 'b', 'c']` for 5 times
+
+```javascript
+var ConcatIterable = require('x-iterable/concat-iterable');
+var iterable = ConcatIterable.multiply(['a', 'b', 'c'], 5);
+console.log(Array.from(iterable));
+```
