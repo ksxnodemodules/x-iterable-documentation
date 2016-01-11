@@ -24,7 +24,9 @@ ConcatIterable multiply(JSIterable<any> iterable, unsigned int times);
 
 Create a ConcatIterable of `times` of `iterable`s
 
-#### Example: Repeat `['a', 'b', 'c']` for 5 times
+#### Examples
+
+##### Repeat `['a', 'b', 'c']` for 5 times
 
 ```javascript
 var ConcatIterable = require('x-iterable/concat-iterable');
