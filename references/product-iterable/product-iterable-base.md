@@ -26,7 +26,7 @@ Create a `ProductIterable` of `exponent` of `iterable`s
 
 ### Examples
 
-#### List all arrays which contains exactly 5 elements which is `'a'`, `'b'` or `'c'`
+#### List all arrays which contain exactly 5 elements which is `'a'`, `'b'` or `'c'`
 
 ```javascript
 var ProductIterable = require('x-iterable/product-iterable');
