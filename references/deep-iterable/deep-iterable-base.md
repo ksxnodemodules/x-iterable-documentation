@@ -11,9 +11,9 @@
 class DeepIterableBase {
 	public constructor(DeepIterableTarget<any> target, Deeper deeper = DeepIterableBase.DEFAULT_DEEPER);
 	public JSIterator<any> [Symbol.iterator]();
-	public static Deeper ANY_DEEPER;
-	public static Deeper OBJECT_DEEPER;
-	public static Deeper LENGTHINESS_DEEPER;
+	public static const Deeper ANY_DEEPER;
+	public static const Deeper OBJECT_DEEPER;
+	public static const Deeper LENGTHINESS_DEEPER;
 	public static Deeper DEFAULT_DEEPER = OBJECT_DEEPER;
 }
 ```
