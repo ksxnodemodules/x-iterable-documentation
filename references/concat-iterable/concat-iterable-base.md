@@ -16,7 +16,7 @@ class ConcatIterableBase {
 
 Constructor takes at least 1 parameters
 
-### Function `ConcatIterable.times` aka `ConcatIterable.multiply`
+### Function `ConcatIterableBase.times` aka `ConcatIterableBase.multiply`
 
 ```
 ConcatIterable multiply(JSIterable<any> iterable, unsigned int times);
