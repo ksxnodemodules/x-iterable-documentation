@@ -12,7 +12,7 @@ class ParallelIterableBase {
 	public static const Stop END_OF_FIRST;
 	public static const Stop END_OF_ALL;
 	public static const Stop END_OF_SOME;
-	public static Stop FOR_COUNT(int count);
+	public static Stop FOR_COUNT(unsigned int count);
 }
 ```
 
@@ -53,7 +53,7 @@ Returns `true` when any iterables of `iterables` have finished
 ### Function `ParallelIterableBase.FOR_COUNT`
 
 ```
-Stop ParallelIterableBase.FOR_COUNT(int count);
+Stop ParallelIterableBase.FOR_COUNT(unsigned int count);
 ```
 
 Returns a `Stop` which determines how many times does iterating
