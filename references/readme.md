@@ -22,6 +22,7 @@
  - [`ParallelIterableBase`](./parallel-iterable/parallel-iterable-base.md)
 
 ## [product-iterable](./product-iterable)
+ - [`ProductIterable`](./product-iterable/readme.md)
 
 ## [Global references](./global)
  - [References](./global/readme.md)
