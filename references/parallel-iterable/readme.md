@@ -1,4 +1,5 @@
-erable
+
+# parallel-iterable
 
 ## Require
 
