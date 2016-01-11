@@ -12,7 +12,7 @@ class ParallelIterableBase {
 	public static const Stop END_OF_FIRST;
 	public static const Stop END_OF_ALL;
 	public static const Stop END_OF_SOME;
-	public static Stop FOR_COUNT(unsigned int count);
+	public static Stop FOR_COUNT(unsigned int);
 }
 ```
 
