@@ -48,7 +48,7 @@ Returns `true` when all iterables of `iterables` have finished
 
  * Type: `Stop`
 
-Returns `true` when any iterable of `iterables` has finished
+Returns `true` when any iterables of `iterables` has finished
 
 ### Function `ParallelIterableBase.FOR_COUNT`
 
