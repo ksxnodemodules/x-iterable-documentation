@@ -1,6 +1,6 @@
 
 # Documentation of x-iterable package
- * This document is for x-iterable [v1.3.9](https://github.com/ksxnodemodules/x-iterable/tree/v1.3.9)
+ * This document is for x-iterable [v2.0.1](https://github.com/ksxnodemodules/x-iterable/tree/v2.0.1)
 
 **NOTE: This document is not yet completed**
 

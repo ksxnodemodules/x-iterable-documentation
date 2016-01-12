@@ -24,7 +24,7 @@ XIterable createClass(optional Class base = createClass.default);
  * Return value:
   - An [`XIterable<base>`](./x-iterable.md)
  * Source code:
-  - https://github.com/ksxnodemodules/x-iterable/blob/v1.3.9/create-class.js#L12
+  - https://github.com/ksxnodemodules/x-iterable/blob/v2.0.1/create-class.js#L12
 
 Examples:
 
@@ -57,7 +57,7 @@ GeneratorClass createClass.fromGenerator(JSGenerator<any, GeneratorClassInstance
  * Return value:
   - A [`GeneratorClass`](./generator-class.md)
  * Source code:
-  - https://github.com/ksxnodemodules/x-iterable/blob/v1.3.9/create-class.js#L132
+  - https://github.com/ksxnodemodules/x-iterable/blob/v2.0.1/create-class.js#L132
 
 Examples:
 
