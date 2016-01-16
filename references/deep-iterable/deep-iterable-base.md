@@ -4,17 +4,19 @@
 ## Class: `DeepIterableBase`
 
  * See also:
-  - [`Deeper`](./deep-iterable-base.md#typedef-deeper)
   - [`DeepIterableTarget`](./deep-iterable-base.md#template-either-deepiterabletarget)
+  - [`Deeper`](./deep-iterable-base.md#typedef-deeper)
 
 ```
 class DeepIterableBase {
 	public constructor(DeepIterableTarget<any> target, Deeper deeper = DeepIterableBase.DEFAULT_DEEPER);
 	public JSIterator<any> [Symbol.iterator]();
+	public CircularDeepIterable circular(Equal);
 	public static const Deeper ANY_DEEPER;
 	public static const Deeper OBJECT_DEEPER;
 	public static const Deeper LENGTHINESS_DEEPER;
 	public static Deeper DEFAULT_DEEPER = OBJECT_DEEPER;
+	public static typedef CircularDeepIterable Circular;
 }
 ```
 
@@ -37,6 +39,10 @@ Constructor takes 1 or 2 parameters: an iterable object called `target` and a fu
 `deeper` is a function which would take 2 parameters (See 'Type' above).
 
 If `element` is an iterable and `deeper(element, ...)` returns `true`, iteration process would go deeper: iterate `element` as a `DeepIterable` using the same `deeper`
+
+### Method `circular`
+
+Create a [`CircularDeepIterable`](./circular-deep-iterable.md)
 
 ### Enum function `DeepIterableBase.ANY_DEEPER`
 
