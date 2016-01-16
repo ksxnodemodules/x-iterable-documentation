@@ -18,4 +18,11 @@ class CircularDeepIterable = XIterable<CircularDeepIterableBase>;
   - [`Equal`](./circular-deep-iterable.md#typedef-equal)
   - [`Circular`](./circular-deep-iterable.md#typedef-circular)
 
+```
+class CircularDeepIterableBase {
+	public constructor(DeepIterableTarget<any> target, Deeper deeper = DeepIterableBase.DEFAULT_DEEPER, Equal equal = Object.is, Circular circular = CircularDeepIterableBase.DEFAULT_CIRCULAR_HANDLER);
+	public static const Circular DEFAULT_CIRCULAR_HANDLER;
+}
+```
+
 ## Typedef: `Equal`
