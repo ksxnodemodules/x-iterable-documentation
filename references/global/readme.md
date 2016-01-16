@@ -65,3 +65,34 @@ either Yieldable {
 	JSIterator<Target>
 }
 ```
+
+## Set: `Falsy`
+
+ * See also:
+  - [Falsy](https://developer.mozilla.org/vi/docs/Glossary/Falsy)
+
+```
+set Falsy {
+	undefined,
+	null,
+	false,
+	'',
+	0,
+	NaN
+}
+```
+
+## Set: `Truthy`
+
+ * See also:
+  - [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+
+```
+set Truthy {
+	exclude<JSObject, null>,
+	exclude<JSString, ''>,
+	true,
+	exclude<JSNumber, either {0, NaN}>,
+	JSFunction<any ...>
+}
+```
