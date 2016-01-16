@@ -26,13 +26,13 @@ Constructor takes 1 or 2 parameters: an iterable object called `target` and a fu
 
 #### Parameter `target`
 
- * Type: `DeepIterableTarget<any>`
+ * Type: [`DeepIterableTarget<any>`](./deep-iterable-base.md#template-either-deepiterabletarget)
 
  * This parameter is required
 
 #### Parameter `deeper`
 
- * Type: `Deeper`
+ * Type: [`Deeper`](./deep-iterable-base.md#typedef-deeper)
 
  * This parameter is optional, constructor would use `DeepIterable.DEFAULT_DEEPER` if this parameter is not specified
 
@@ -47,21 +47,21 @@ Create a [`CircularDeepIterable`](./circular-deep-iterable.md)
 ### Enum function `DeepIterableBase.ANY_DEEPER`
 
  * Type: `bool (DeepIterableTarget<any>, DeepIterable)`
-  - a.k.a. `Deeper`
+  - a.k.a. [`Deeper`](./deep-iterable-base.md#typedef-deeper)
 
 Always returns `true`
 
 ### Enum function `DeepIterableBase.OBJECT_DEEPER`
 
  * Type: `bool (DeepIterableTarget<any> target, DeepIterable)`
-  - a.k.a. `Deeper`
+  - a.k.a. [`Deeper`](./deep-iterable-base.md#typedef-deeper)
 
 Returns `true` if `target` is an object
 
 ### Enum function `DeepIterableBase.LENGTHINESS_DEEPER`
 
  * Type: `bool (DeepIterableTarget<any> target, DeepIterable)`
-  - a.k.a. `Deeper`
+  - a.k.a. [`Deeper`](./deep-iterable-base.md#typedef-deeper)
 
 Returns `true` if `target` has property `length` greater than 1
 
