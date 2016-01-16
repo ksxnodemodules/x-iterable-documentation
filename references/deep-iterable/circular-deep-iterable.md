@@ -49,11 +49,17 @@ Determines if two parameters are the same to avoid circular iteration
 
  * Type [`Circular`](./circular-deep-iterable.md#typedef-circular)
 
- * This parameter is optional, constructor would use [`CircularDeepIterableBase.DEFAULT_CIRCULAR_HANDLER`](./circular-deep-iterable.md#enum-function-circulardeepiterabledefault_circular_handle) is this parameter is not specified
+ * This parameter is optional, constructor would use [`CircularDeepIterableBase.DEFAULT_CIRCULAR_HANDLER`](./circular-deep-iterable.md#enum-function-circulardeepiterablebasedefault_circular_handle) is this parameter is not specified
 
 Handles 'duplicated' values
 
 Returns an iterable or `undefined`
+
+### Enum function `CircularDeepIterableBase.DEFAULT_CIRCULAR_HANDLER`
+
+ * Type [`Circular`](./circular-deep-iterable#typedef-circular)
+
+Returns an empty iterable
 
 ## Typedef: `Equal`
 
