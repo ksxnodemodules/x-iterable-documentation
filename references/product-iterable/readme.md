@@ -35,3 +35,30 @@ var products = iterable.map(
 );
 console.log(products);
 ```
+
+### Tips & Tricks
+
+#### Performance: Product of an empty iterable and a non-empty iterable
+
+You might know what I mean after read the following; And, to be more sure, clone the code of x-iterable to test it yourself
+
+```javascript
+var ProductIterable = require('x-iterable/product-iterable');
+// To be continued...
+```
+
+##### Non-empty first
+
+```javascript
+console.log(new ProductIterable('abcdef', '').toArray());
+```
+
+Returns `[]`, but according to the source code, this code would iterate for each element of `'abcdef'` &rightarrow; iterate **6 times**
+
+##### Empty first
+
+```javascript
+console.log(new ProductIterable('', 'abcdef').toArray());
+```
+
+Returns `[]` - same as above, but according to the source code, this code iterate no charaters &rightarrow; iterate **0 times**
