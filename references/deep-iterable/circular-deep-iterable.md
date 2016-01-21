@@ -53,13 +53,11 @@ Determines if two parameters are the same to avoid circular iteration
 
 Handles 'duplicated' values
 
-Returns an iterable or `undefined`
-
 ### Enum function `CircularDeepIterableBase.DEFAULT_CIRCULAR_HANDLER`
 
  * Type [`Circular`](./circular-deep-iterable#typedef-circular)
 
-Returns an empty iterable
+Do nothing at all
 
 ## Typedef: `Equal`
 
@@ -69,9 +67,6 @@ typedef JSFunction<bool, void, DeepIterableTarget<any>, DeepIterableTarget<any>>
 
 ## Typedef: `Circular`
 
- * See also:
-  - [`Falsy`](../global/readme.md#set-falsy)
-
 ```
-typedef JSFunction<either {Iterable<any>, Falsy}, void, DeepIterableTarget<any>, CircularDeepIterable> Circular;
+typedef JSFunction<void, void, DeepIterableTarget<any>, CircularDeepIterable> Circular;
 ```
