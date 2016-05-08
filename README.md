@@ -1,7 +1,7 @@
 
 # Documentation of x-iterable package
 
-**IMPORTANT: This document is for x-iterable [v2.4.0](https://github.com/ksxnodemodules/x-iterable/tree/v2.4.0) which is old and may not be compatible with version >= [4.0.0](https://github.com/ksxnodemodules/x-iterable/tree/v2.4.0)**
+**IMPORTANT: This document is for x-iterable [v2.4.0](https://github.com/ksxnodemodules/x-iterable/tree/v2.4.0) which is old and may not be compatible with version >= [4.0.0](https://github.com/ksxnodemodules/x-iterable/tree/v4.0.0)**
 
 **NOTE: This document is incomplete**
 
