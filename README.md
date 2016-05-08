@@ -1,8 +1,9 @@
 
 # Documentation of x-iterable package
- * This document is for x-iterable [v2.4.0](https://github.com/ksxnodemodules/x-iterable/tree/v2.4.0)
 
-**NOTE: This document is not yet completed**
+**IMPORTANT: This document is for x-iterable [v2.4.0](https://github.com/ksxnodemodules/x-iterable/tree/v2.4.0) which is old and may not be compatible with version >= [4.0.0](https://github.com/ksxnodemodules/x-iterable/tree/v2.4.0)**
+
+**NOTE: This document is incomplete**
 
 ## What's this repo using for?
 This repo is contains documents for x-iterable - a [node](https://nodejs.org) [package](https://npmjs.com), including:
